@@ -84,7 +84,7 @@ Ini adalah kondisi operasional standar di mana setiap gate terhubung secara real
    - Menghitung tarif perjalanan berdasarkan terminal masuk dan terminal keluar.
    - Memotong saldo pengguna di database pusat sesuai dengan tarif.
    - Memperbarui catatan perjalanan di database menjadi "selesai", lengkap dengan rincian tarif dan waktu.
-4. **Respon & Sinkronisasi**: Server mengirimkan respon "OK" kembali ke gate, beserta rincian transaksi seperti jumlah tarif yang dipotong dan sisa saldo akhir.
+4. **Respon & Sinkronisasi**: Server mengirimkan respon "OK" kembali ke gate, beserta rincian transaksi seperti jumlah tarif yang dipotong dan sisa saldo akhir. **Gate juga menulis data perjalanan (check-in) ke dalam kartu sebagai backup jika sewaktu-waktu terjadi offline.**
 5. **Aksi Gate**: Gate menerima respon, palang gerbang terbuka, dan layar menampilkan rincian perjalanan. Gate juga bisa memperbarui data saldo di kartu agar tetap sinkron dengan server.
 
 ---
