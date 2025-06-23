@@ -72,7 +72,7 @@ Ini adalah kondisi operasional standar di mana setiap gate terhubung secara real
    - Memverifikasi apakah ID_Kartu valid dan berstatus 'aktif'.
    - Memastikan saldo di database mencukupi syarat minimum untuk memulai perjalanan.
    - Memastikan kartu tidak sedang dalam status 'check-in' di tempat lain (mencegah double entry).
-4. **Pencatatan & Respon**: Jika valid, Server Pusat membuat catatan perjalanan baru di database dengan status "berjalan". Kemudian, server mengirimkan respon "OK" kembali ke gate.
+4. **Pencatatan & Respon**: Jika valid, Server Pusat membuat catatan perjalanan baru di database dengan status "berjalan". Kemudian, server mengirimkan respon "OK" kembali ke gate. **Gate juga menulis data perjalanan (check-in) ke dalam kartu sebagai backup jika sewaktu-waktu terjadi offline di gate tujuan.**
 5. **Aksi Gate**: Gate menerima respon "OK", palang gerbang terbuka, dan layar menampilkan pesan sambutan beserta sisa saldo resmi yang diterima dari server. Seluruh proses ini terjadi dalam sepersekian detik.
 
 #### Alur Kerja Check-out (Keluar)
