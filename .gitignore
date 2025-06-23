@@ -1,0 +1,46 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Compiled binary
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go specific
+*.test
+*.out
+/vendor/
+/bin/
+/pkg/
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Log files
+*.log
+/log/
+/logs/
+
+# Temporary files
+/tmp/
+/temp/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Binary folder
+/build/
+/dist/
+
+# Air live reload
+/tmp/ 
